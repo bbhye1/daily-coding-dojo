@@ -1,10 +1,10 @@
 const names = prompt('이름을 입력해 주세요').split(' ');
 const scores = prompt('이름을 입력해 주세요').split(' ');
 
+const result = {};
 
-const result = names.reduce((name, index, result) => {
-return { ...result, scores[index] : name };
-}, {})
-
+names.forEach((name, index) => {
+  result[name] = scores[index];
+});
 
 console.log(result);

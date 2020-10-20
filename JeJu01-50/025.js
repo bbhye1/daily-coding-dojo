@@ -1,5 +1,5 @@
 function circle(num) {
-return num ** 2 *3.14;
+return num ** 2 
 };
 
 circle(5);
