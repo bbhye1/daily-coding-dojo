@@ -1,3 +1,3 @@
 const text = prompt('').split(' ');
 
-console.log(test.length);
+console.log(text.length);
