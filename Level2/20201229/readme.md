@@ -27,4 +27,4 @@
 pop과 shift를 함께 사용하는 것 대신 splice와 pop으로 시간을 줄였다. 그리고 중복된 코드를 바깥으로 빼주고 people배열을 직접 sort해주어서 시간을 단축시켰다. 
 효율성이 붙어있는 문제는 어떻게든 시간을 줄이는 게 좋은 코드다. 명심하자.
 
-- 링크: https://programmers.co.kr/learn/courses/30/lessons/42578
+- 링크: https://programmers.co.kr/learn/courses/30/lessons/42885
