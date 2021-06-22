@@ -10,7 +10,7 @@ function getPokemonTypesSize(nums) {
 function solution(nums) {
   const maxSelection = nums.length / 2;
   const pokemonTypes = getPokemonTypesSize(nums);
-  return maxSelection > pokemonTypes ? pokemonTypes : maxSelection;
+  return Math.min(maxSelection, pokemonTypes);
 }
 
 test('solution', () => {
