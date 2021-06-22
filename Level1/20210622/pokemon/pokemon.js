@@ -7,9 +7,20 @@ function getPokemonTypesSize(nums) {
   return pokemonTypes.size;
 }
 
+function getPokemonTypesSize2(nums) {
+  const pokemonTypes = nums.reduce((acc, number) => {
+    if (acc.includes(number)) {
+      return acc;
+    }
+    return [...acc, number];
+  }, []);
+
+  return pokemonTypes.length;
+}
+
 function solution(nums) {
   const maxSelection = nums.length / 2;
-  const pokemonTypes = getPokemonTypesSize(nums);
+  const pokemonTypes = getPokemonTypesSize2(nums);
   return Math.min(maxSelection, pokemonTypes);
 }
 
